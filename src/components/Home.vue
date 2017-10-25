@@ -1,28 +1,23 @@
 <template>
   <div class="home">
-    <storyblock>
-      <beginning></beginning>
-    </storyblock>
-    <storyblock>
-      <start-with-see></start-with-see>
-    </storyblock>
+    <vj-storyblock>
+      <vj-beginning></vj-beginning>
+    </vj-storyblock>
   </div>
 </template>
 
 <script>
-import Storyblock from './Storyblock'
-import Beginning from './Beginning'
-import StartWithSee from './StartWithSee'
+import vjStoryblock from './Storyblock'
+import vjBeginning from './Beginning'
 
 export default {
-  name: 'home',
+  name: 'vj-home',
   data () {
     return {}
   },
   components: {
-    Storyblock,
-    Beginning,
-    StartWithSee
+    vjStoryblock,
+    vjBeginning
   }
 }
 </script>

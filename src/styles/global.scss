@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400&subset=latin-ext');
+@import 'variables.scss';
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -53,46 +53,13 @@ table {
 
 html,body {
   height:100%;
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-base;
 }
 
 body {
 	padding:0;
 	position:relative;
-	background-image: radial-gradient(#FFFFFF 20%, #A7ADB2 100%);
-}
-
-.wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index:1;
-  transform: translateY(-50%) translateX(-50%);
-  max-width: 600px;
-  width: 100%;
-  text-align:center;
-}
-
-.logo {
-	max-width:300px;
-	width:100%;
-	display:inline-block;
-}
-
-#logo_svg .cls-1 {
-	fill:#488588;
-	transition:all 0.1s ease-out;
-}
-
-.logo img {
-	width:100%;
-	height:auto;
-}
-
-h1 {
-	margin-top:20px;
-	color: #414141;
-	transition:all 0.1s ease-out;
+	color: $primary;
 }
 
 .hero {
