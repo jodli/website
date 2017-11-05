@@ -90,10 +90,6 @@
     .logo:hover & {
       transform: none !important;
       filter: blur(0px) !important;
-
-      &:hover {
-        transform: scale(1.5) !important;
-      }
     }
   }
 </style>
