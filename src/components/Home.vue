@@ -4,7 +4,7 @@
       <vj-beginning></vj-beginning>
     </vj-storyblock>
     <vj-storyblock id="work">
-      <h1>Work</h1>
+      <vj-work></vj-work>
     </vj-storyblock>
     <vj-storyblock id="about">
       <h1>About</h1>
@@ -15,6 +15,7 @@
 <script>
 import vjStoryblock from './Storyblock'
 import vjBeginning from './Beginning'
+import vjWork from './Work'
 
 export default {
   name: 'vj-home',
@@ -23,7 +24,8 @@ export default {
   },
   components: {
     vjStoryblock,
-    vjBeginning
+    vjBeginning,
+    vjWork
   }
 }
 </script>
