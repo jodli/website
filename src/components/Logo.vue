@@ -57,7 +57,7 @@
     },
     mounted () {
       setTimeout(() => {
-        this.assignAnimations()
+        // this.assignAnimations()
       }, 500)
     }
   }
@@ -72,7 +72,7 @@
     align-items: center;
     justify-content: center;
     height: 150px;
-    font-size: 70px;
+    font-size: 4rem;
     perspective: 1000px;
     user-select: none;
 

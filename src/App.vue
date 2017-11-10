@@ -1,12 +1,18 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <vj-navigation></vj-navigation>
   </div>
 </template>
 
 <script>
+import vjNavigation from './components/Navigation'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    vjNavigation
+  }
 }
 </script>
 

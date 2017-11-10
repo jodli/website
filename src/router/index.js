@@ -5,11 +5,23 @@ import Home from '@/components/Home'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'Home',
       component: Home
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        selector: to.hash
+      }
+    }
+    if (savedPosition) {
+      return savedPosition
+    }
+    return { x: 0, y: 0 }
+  }
 })

@@ -34,6 +34,6 @@
     margin-top: 80px;
     transition: all 0.1s ease-out;
     opacity: 0.1;
-    font-size: 22px;
+    font-size: 1.2rem;
   }
 </style>

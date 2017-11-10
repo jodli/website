@@ -1,7 +1,13 @@
 <template>
   <div class="home">
-    <vj-storyblock>
+    <vj-storyblock id="beginning">
       <vj-beginning></vj-beginning>
+    </vj-storyblock>
+    <vj-storyblock id="work">
+      <h1>Work</h1>
+    </vj-storyblock>
+    <vj-storyblock id="about">
+      <h1>About</h1>
     </vj-storyblock>
   </div>
 </template>
@@ -24,9 +30,6 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+
 }
 </style>
