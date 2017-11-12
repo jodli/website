@@ -44,6 +44,7 @@
 <style lang="scss" scoped>
   .storyblock {
     position: relative;
-    min-height: 100vh
+    min-height: 100vh;
+    padding: 30px 0;
   }
 </style>

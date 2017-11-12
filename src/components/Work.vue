@@ -1,11 +1,13 @@
 <template>
   <div class="work">
-    <h1>Work</h1>
-    <vj-work-item v-for="item in items"
-      :name="item.name"
-      :image="item.image"
-      :url="item.url">
-    </vj-work-item>
+    <h1>My Work</h1>
+    <div class="work-items">
+      <vj-work-item v-for="item in items"
+        :name="item.name"
+        :image="item.image"
+        :url="item.url">
+      </vj-work-item>
+    </div>
   </div>
 </template>
 
@@ -29,6 +31,11 @@
             name: 'OZ Racing',
             image: '/static/images/work_oz.png',
             url: '#'
+          },
+          {
+            name: 'Bals Elektrotechnik',
+            image: '/static/images/work_bals.png',
+            url: '#'
           }
         ]
       }
@@ -37,5 +44,4 @@
 </script>
 
 <style lang="scss" scoped>
-
 </style>

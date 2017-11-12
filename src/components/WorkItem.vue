@@ -1,7 +1,9 @@
 <template>
-  <a class="work-item" :href="url" :title="name">
-    <img :src="image" v-if="image">
-  </a>
+  <div class="work-item">
+    <a :href="url" :title="name">
+      <img :src="image" v-if="image">
+    </a>
+  </div>
 </template>
 
 <script>
@@ -25,13 +27,22 @@
 </script>
 
 <style lang="scss" scoped>
-  .work-item {
-    display: block;
-    max-width: 500px;
+  @import '../styles/variables.scss';
 
-    & > img {
-      width: 100%;
-      height: auto;
+  .work-item {
+    text-align: center;
+
+    & > a {
+      display: block;
+      margin: 0 auto;
+      max-width: 500px;
+      box-shadow: 0 3px 20px rgba($dark, 0.3);
+      margin-bottom: 70px;
+
+      & > img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 </style>
