@@ -2,10 +2,11 @@
   <div class="work">
     <h1>My Work</h1>
     <div class="work-items">
-      <vj-work-item v-for="item in items"
+      <vj-work-item v-for="(item, index) in items"
         :name="item.name"
         :image="item.image"
-        :url="item.url">
+        :url="item.url"
+        :key="index">
       </vj-work-item>
     </div>
   </div>
