@@ -95,6 +95,7 @@
 </template>
 
 <script>
+  // ToDo: Add animations
   import vjStoryblock from './Storyblock'
 
   export default {

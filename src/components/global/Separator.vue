@@ -29,7 +29,7 @@
 
     @media(min-width: $tablet) {
       display: inline-block;
-    margin: 0 5px;
+      margin: 0 15px;
     }
   }
 </style>
