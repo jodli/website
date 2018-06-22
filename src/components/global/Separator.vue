@@ -14,10 +14,22 @@
   $arrow-size: 7px;
 
   .separator {
-    display: inline-block;
-    margin: 0 10px;
-    border-left: $arrow-size/1.7 solid transparent;
-    border-right: $arrow-size/1.7 solid transparent;
-    border-bottom: $arrow-size solid $primary;
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+
+    &:before {
+      content: '';
+      position: relative;
+      display: inline-block;
+      border-left: $arrow-size/1.7 solid transparent;
+      border-right: $arrow-size/1.7 solid transparent;
+      border-bottom: $arrow-size solid $primary;
+    }
+
+    @media(min-width: $tablet) {
+      display: inline-block;
+    margin: 0 5px;
+    }
   }
 </style>
