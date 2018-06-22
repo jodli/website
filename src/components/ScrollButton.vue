@@ -54,7 +54,7 @@
 
   .scroll-button {
     position: fixed;
-    bottom: 10px;
+    bottom: 16px;
     left: 50%;
     transform: translateX(-50%) translateZ(0);
     display: flex;
@@ -66,8 +66,8 @@
     justify-content: center;
     border: 2px solid $primary;
     border-radius: 100%;
-    height: 40px;
-    width: 40px;
+    height: 46px;
+    width: 46px;
     background-color: $white;
     opacity: 0;
     visibility: hidden;
