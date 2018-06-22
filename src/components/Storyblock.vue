@@ -8,10 +8,9 @@
 
 <script>
   import {mapMutations} from 'vuex'
-  import $ from 'jquery'
 
   export default {
-    name: 'storyblock',
+    name: 'vj-storyblock',
     props: {
       id: {
         type: String,
@@ -39,23 +38,6 @@
     methods: {
       ...mapMutations({
         setActive: 'setActive'
-      }),
-      checkPosition () {
-        let windowTop = $(window).scrollTop()
-        let el = $(this.$el)
-        let elTop = el[0].offsetTop
-        let elBottom = elTop + el[0].offsetHeight
-
-        if (windowTop >= elTop && windowTop < elBottom) {
-          this.setActive(this.id)
-        }
-      }
-    },
-    mounted () {
-      let vm = this
-      vm.checkPosition()
-      $(window).scroll(() => {
-        vm.checkPosition()
       })
     }
   }
