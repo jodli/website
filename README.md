@@ -1,6 +1,6 @@
 # visualjerk-website
 
-> Kickass portfolio for visualjerk
+> a galactic experience
 
 ## Build Setup
 
