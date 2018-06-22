@@ -11,7 +11,8 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
-    }
+    },
+    { path: '*', redirect: '/' }
   ],
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {

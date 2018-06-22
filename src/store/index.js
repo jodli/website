@@ -7,27 +7,48 @@ export default new Vuex.Store({
   state: {
     items: [
       {
-        label: 'Beginning',
-        id: 'beginning',
+        id: 'visualjerk',
         active: false
       },
       {
-        label: 'Work',
+        id: 'feature',
+        active: false
+      },
+      {
+        id: 'about',
+        active: false
+      },
+      {
         id: 'work',
         active: false
       },
       {
-        label: 'About',
-        id: 'about',
+        id: 'contact',
+        active: false
+      },
+      {
+        id: 'forest',
         active: false
       }
     ]
   },
   getters: {
     getActive (state) {
-      return state.items.find(item => {
-        return item.active
-      })
+      return state.items.find(item => item.active)
+    },
+    getPrevious (state) {
+      const index = state.items.findIndex(item => item.active)
+      if (index < 1) {
+        return false
+      }
+      return state.items[index - 1]
+    },
+    getNext (state) {
+      const index = state.items.findIndex(item => item.active)
+      if (index > state.items.length - 2) {
+        return false
+      }
+      return state.items[index + 1]
     },
     getItems (state) {
       return state.items

@@ -91,12 +91,14 @@
       :padding="0">
       <vj-image name="forest"/>
     </vj-storyblock>
+    <vj-scroll-button />
   </div>
 </template>
 
 <script>
   // ToDo: Add animations
-  import vjStoryblock from './Storyblock'
+  import VjStoryblock from './Storyblock'
+  import VjScrollButton from './ScrollButton'
 
   export default {
     name: 'vj-home',
@@ -104,7 +106,8 @@
       return {}
     },
     components: {
-      vjStoryblock
+      VjStoryblock,
+      VjScrollButton
     }
   }
 </script>

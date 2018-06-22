@@ -7,8 +7,10 @@ import VjImage from './components/global/Image'
 import VjSeparator from './components/global/Separator'
 import store from './store'
 import router from './router'
+import vueSmoothScroll from 'vue-smooth-scroll'
 
 Vue.config.productionTip = false
+Vue.use(vueSmoothScroll)
 Vue.component('VjContent', VjContent)
 Vue.component('VjImage', VjImage)
 Vue.component('VjSeparator', VjSeparator)

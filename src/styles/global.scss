@@ -98,11 +98,15 @@ h3, .size-3 {
 }
 
 .size-4 {
-  font-size: $size-4;
+  @media(min-width: $tablet) {
+    font-size: $size-4;
+  }
 }
 
 .size-5 {
-  font-size: $size-5;
+  @media(min-width: $tablet) {
+    font-size: $size-5;
+  }
 }
 
 a {

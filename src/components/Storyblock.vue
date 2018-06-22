@@ -38,6 +38,23 @@
     methods: {
       ...mapMutations({
         setActive: 'setActive'
+      }),
+      checkPosition () {
+        const doc = document.documentElement
+        const windowTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0)
+        const elTop = this.$el.offsetTop
+        const elBottom = elTop + this.$el.offsetHeight
+
+        if (windowTop >= elTop && windowTop < elBottom) {
+          this.setActive(this.id)
+        }
+      }
+    },
+    mounted () {
+      let vm = this
+      vm.checkPosition()
+      window.addEventListener('scroll', () => {
+        vm.checkPosition()
       })
     }
   }

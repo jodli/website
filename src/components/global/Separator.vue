@@ -15,7 +15,6 @@
 
   .separator {
     display: block;
-    margin: 5px 0;
     text-align: center;
 
     &:before {

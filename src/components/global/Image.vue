@@ -58,7 +58,7 @@
     box-sizing: border-box;
 
     img {
-      max-width: 120vw;
+      max-width: 140vw;
     }
   }
 </style>
