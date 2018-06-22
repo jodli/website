@@ -1,6 +1,8 @@
 <template>
-  <div class="storyblock" :id="id">
-    <slot></slot>
+  <div class="storyblock" :id="id" :style="styles">
+    <div class="storyblock-content">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -14,6 +16,24 @@
       id: {
         type: String,
         default: ''
+      },
+      align: {
+        type: String,
+        default: 'center'
+      },
+      padding: {
+        type: Number,
+        default: 30
+      }
+    },
+    computed: {
+      styles () {
+        let styles = []
+
+        styles.push(`align-items: ${this.align};`)
+        styles.push(`padding: ${this.padding}px 0;`)
+
+        return styles.join(' ')
       }
     },
     methods: {
@@ -45,6 +65,11 @@
   .storyblock {
     position: relative;
     min-height: 100vh;
-    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .storyblock-content {
+    flex: 1;
   }
 </style>
