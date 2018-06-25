@@ -72,7 +72,8 @@
           Jörg Bayreuther<vj-separator/>
           Zum Bären 1<vj-separator/>
           90562 Heroldsberg<vj-separator/>
-          Tel. 0175 164 43 43
+          Tel. 0175 164 43 43<vj-separator/>
+          <a href="/#/privacy">Privacy</a>
         </p>
       </vj-content>
       <vj-image
